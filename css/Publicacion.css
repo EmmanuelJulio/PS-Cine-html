@@ -1,0 +1,58 @@
+
+
+/* claves globales */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+    
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: rgb(67,169,235);
+    background: linear-gradient(0deg, rgba(67,169,235,1) 0%, rgba(0,0,0,1) 100%);
+    background-repeat: no-repeat;
+    background-position: center center ;
+ 
+    height: auto;
+   
+}
+
+
+ 
+
+/* Globlales */
+
+ 
+.sl-3{
+    margin-left: 30px;
+}
+
+ 
+
+.container-imagen {
+    height: 400px;
+    width: 400px;
+}
+.container-imagen img {
+    max-width: 100%;
+    max-height: 400px;
+ 
+}
+.Pelicula-video{
+    height: 600px;
+    width: 600px;
+   
+}
+ .color-texto-trailer{
+    background-color: #0d1d29;
+ }
+.Pelicula-video iframe{
+    background-color: #0d1d29;
+    height: 600px;
+    width: 1000px;
+}
+.center-video {
+    margin-left: 130px;
+    margin-bottom: 50px;
+}
