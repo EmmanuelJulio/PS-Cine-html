@@ -1,0 +1,106 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+    
+    body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: rgb(67,169,235);
+    background: linear-gradient(0deg, rgba(67,169,235,1) 0%, rgba(0,0,0,1) 100%);
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+#carrusel img{
+    align-items: center;
+}
+/* slide de imagenes  */
+.carousel-inner{
+    margin-top: 10px;
+    height: 100%; 
+    width: 70%; 
+    align-items: center;
+    text-align: center;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*  */
+#tarjetas{
+    /* border: solid 1px black; */
+    margin-top: 30px;
+    margin: auto auto;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+.Texto-Encabesado{
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+    color: aliceblue;
+}
+#carrusel-pelis{
+    padding-top: 30px;
+    min-width: 640;
+    max-width: 900;
+}
+#tarjetas:hover{
+    transform: scale(1);
+    box-shadow: 5px 20px 30px rgba(0,0,0,0.2);
+}
+
+.card:hover{
+    transform: scale(1);
+    box-shadow: 10px 20px 30px rgba(0,0,0,0.2); 
+}
+.card{
+    position: relative; 
+    margin: 15px 15px 5px 15px;
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto; 
+}
+#contenedor{
+    align-items: center;
+}
+/* slide de imagenes  */
+.wrapper:hover{
+    transform: scale(1);
+    box-shadow: 5px 20px 30px rgba(0,0,0,0.2);
+}
+.wrapper .container{
+    width: 100%;
+    height: 100%;
+}
+.wrapper .container .top{
+    height: 80%;
+    width: 100%;
+    /* background-size: 100%; */
+}
+.products_body{
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width: 100%;
+    height: 50vh;
+}
+.wrapper{
+     min-width: 250px;
+    min-height:350px;
+    max-width: 250px;
+    max-height:350px; 
+    background: transparent;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px 10px 10px 10px;
+    transform: scale(0.93);
+    transition: box-shadow 0.5s, transform 0.5s;
+    z-index: auto;
+}
