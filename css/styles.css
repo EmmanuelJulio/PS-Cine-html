@@ -9,7 +9,7 @@
     background: rgb(67,169,235);
     background: linear-gradient(0deg, rgba(67,169,235,1) 0%, rgba(0,0,0,1) 100%);
     background-repeat: no-repeat;
-    height: 100vh;
+    height: auto;
 }
 
 #carrusel img{

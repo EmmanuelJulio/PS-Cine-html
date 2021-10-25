@@ -18,7 +18,9 @@ body{
    
 }
 
-
+.Texto-funcion{
+    font-size: large;
+}
  
 
 /* Globlales */
@@ -28,14 +30,20 @@ body{
     margin-left: 30px;
 }
 
- 
+ .rounded{
+     border-radius: 5px;
+ }
+ .Get-tickets{
+     margin-top: 10px;
+     align-items: center;
+ }
 
 .container-imagen {
     height: 400px;
     width: 400px;
 }
 .container-imagen img {
-    max-width: 100%;
+    max-width: 120%;
     max-height: 400px;
  
 }
@@ -55,4 +63,7 @@ body{
 .center-video {
     margin-left: 130px;
     margin-bottom: 50px;
+}
+.BtnComprarTicket{
+  
 }

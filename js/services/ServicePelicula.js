@@ -14,7 +14,7 @@ export async function GetAllFilms() {
 
 const apigetFunciones = "https://localhost:44302/api/funcion";
 export async function GetFuncionesDia(parametros) {
-  console.log(parametros)
+  
   var elemento = [];
   try {
     await fetch(
@@ -29,6 +29,8 @@ export async function GetFuncionesDia(parametros) {
     return elemento;
   } catch (error) {}
 }
+
+
 
 // pelicula
 // fecha

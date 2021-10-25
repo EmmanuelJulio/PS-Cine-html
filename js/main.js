@@ -3,6 +3,7 @@ import { indexRender } from '../js/container/index.js'
 
 window.onload=()=>{
 
+  
   indexRender();
   
 
@@ -10,7 +11,7 @@ window.onload=()=>{
 $(function(){
 	$('.center').slick({
 		infinite:true,
-		slidesToShow: 5,
+		slidesToShow: 8,
     slidesToScroll: 1,
 		arrows:false,
 		autoplay: true,
@@ -20,9 +21,9 @@ $(function(){
         centerPadding:'80px',
         responsive: [
             {
-              breakpoint: 1024,
+              breakpoint: 800,
               settings: {
-                slidesToShow: 5,
+                slidesToShow: 7,
                 slidesToScroll: 3,
                 infinite: true,
                 dots: false
@@ -46,4 +47,8 @@ $(function(){
 	});
 });
 
+
+function GuardarIdFuntionLocalStorage(e){
+  localStorage.setItem("IdFuncion",e)
+}
 }

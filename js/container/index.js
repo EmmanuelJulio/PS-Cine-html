@@ -9,7 +9,7 @@ const renderCarrusel = (json)=>{
 const renderTarjeta = (json)=>{
     const _tarjeta = document.getElementById('tarjetas')
     
-    _tarjeta.innerHTML+=tarjeta(json.poster,json.peliculaNombre,json.sinopsis,json.funcionId);
+    _tarjeta.innerHTML+=tarjeta(json.poster,json.peliculaNombre,json.sinopsis,json.funcionId,json.horario,json.funcionId);
 }
 const  chargeInitCarrusel= async ()=>{
       const films =  await GetAllFilms();
@@ -27,15 +27,16 @@ const chargeInitTarjeta= async()=>{
         Fecha:"",
 
     }
-    console.log(parameters)
     const films =  await GetFuncionesDia(parameters);       
               $.each(films,function(i,item){
                 
         $.each(item,function(i ,funcion){
+            
             renderTarjeta(funcion)
         })
       });
 }
+//  js de boton buscador---------------------
 var imput = document.getElementById("Buscador")
 document.getElementById('BuscarBotton').onclick  = async  function(e)
 {
@@ -47,7 +48,7 @@ document.getElementById('BuscarBotton').onclick  = async  function(e)
     }
    
     const funcion = await GetFuncionesDia(parameters);
-    console.log(funcion)
+    
     const _tarjeta = document.getElementById('tarjetas')
     _tarjeta.innerHTML=``
     $.each(funcion,function(i,item){
@@ -58,8 +59,9 @@ document.getElementById('BuscarBotton').onclick  = async  function(e)
       });
 
 };
+
 export const indexRender=()=>{
-   
+    
     chargeInitCarrusel();
     chargeInitTarjeta();
 

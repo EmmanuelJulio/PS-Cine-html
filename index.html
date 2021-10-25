@@ -17,13 +17,21 @@
   <div id="Contenedor">
     <!-- Encabezadooooooo             -->
   <header>
-    <nav class="navbar navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
-        <a class="navbar-brand">Borbocine</a>
-        <form class="d-flex">
-          <input class="form-control me-2" type="search"id="Buscador" placeholder="Buscar Pelicula" aria-label="Search">
-          <button class="btn btn-outline-success" id="BuscarBotton" type="button" >Buscar</button>
-        </form>
+        <a class="navbar-brand" href="http://127.0.0.1:5500/index.html">Borbocine</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" id="Buscador" type="search" placeholder="Buscar" aria-label="Search">
+            <button class="btn btn-outline-success" id="BuscarBotton" type="submit">Search</button>
+          </form>
+        </div>
       </div>
     </nav>
   </header>
@@ -43,7 +51,7 @@
 </div>
 
 <!-- seccion  -->
-<footer>
+<footer class="mt-5">
   <section class="w-50 mx-auto tecxt-center" id="intro">
     <h1 class="p-3 fs-2 border-top border-3">Un cine al alcance de todos <span class="text-primary">Cine gratuito</span></h1>
     <p class="text-primary">Este es un cine donde solo con tu nombre puedes tener acceso a una pelicula! No te preocupes por los costos, !Nos encargamos nosotros!</p>
@@ -62,6 +70,11 @@
     <!--CDN-->
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <!-- scrip propio -->
+  <script>
+    function GuardarIdFuntionLocalStorage(e){
+    localStorage.setItem("IdFuncion",e)
+  }
+  </script>
    <script src="/js/main.js" type="module"></script>
    
   
