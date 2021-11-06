@@ -21,56 +21,50 @@
         <!-- Encabezadooooooo             -->
         <header>
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="container-fluid">
-                  <a class="navbar-brand" href="http://127.0.0.1:5500/index.html">Borbocine</a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                      
-                    </ul>
-                    <form class="d-flex">
-                      <input class="form-control me-2" id="Buscador" type="search" placeholder="Buscar" aria-label="Search">
-                      <button class="btn btn-outline-success" id="BuscarBotton" type="submit">Search</button>
-                    </form>
-                  </div>
+              <div class="container-fluid">
+                <a class="navbar-brand" href="http://127.0.0.1:5500/view/index.html">Borbocine</a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      
+      
                 </div>
-              </nav>
-        </header>
+              </div>
+            </nav>
+          </header>
         <div class="Texto-Encabesado">
             <h1 class="text-center text-light mt-2">Pelicula</h1>
         </div>
         <!-- Pelicula publicacion -->
         <div class="container mb-5">
             <div id="Contenedor-Funcion">
-              
+
             </div>
             <div class="Get-tickets mt-5">
                 <h1 class="text-light ">Comprar Tickets</h1>
                 <div mt-5>
-                    <div class="input-group input-group-lg" id="ImputNombre">
+                    <div class="input-group input-group-lg">
                         <span class="input-group-text" id="inputGroup-sizing-lg mt-5">Nombre y Apellido</span>
-                        <input type="text" class="form-control" aria-label="Sizing example input"
+                        <input id="ImputNombre" type="text" class="form-control" aria-label="Sizing example input"
                             aria-describedby="inputGroup-sizing-lg">
                     </div>
                     <div class="mt-2">
-                        <div class="input-group input-group-lg " id="ImputCantidad">
+                        <div class="input-group input-group-lg ">
                             <span class="input-group-text" id="inputGroup-sizing-lg mt-5">Cantidad de tickets</span>
-                            <input type="text" class="form-control" aria-label="Sizing example input"
+                            <input id="ImputCantidad"  type="number" min="1" pattern="^[0-9]+" class="form-control" aria-label="Sizing example input"
                                 aria-describedby="inputGroup-sizing-lg">
                         </div>
                     </div>
                 </div>
-               <div class="BtnComprarTicket">
-                <button type="button" class="btn btn-success btn-lg mt-3 center" onclick="Geticket()" id="ComprarTicket">Comprar tickets</button>
-               </div>
+                <div class="BtnComprarTicket">
+                    <button type="button" class="btn btn-success btn-lg mt-3 center" id="ComprarTicket">Comprar
+                        tickets</button>
+                </div>
             </div>
         </div>
+       
         <!-- seccion  -->
         <footer class="mt-4">
             <section class="w-50 mx-auto tecxt-center" id="intro">
-                <h1 class="p-3 fs-2 border-top border-3 text-light mt-2" >Un cine al alcance de todos un cine gratuito
+                <h1 class="p-3 fs-2 border-top border-3 text-light mt-2">Un cine al alcance de todos un cine gratuito
                 </h1>
                 <p class="text-light mt-2">Este es un cine donde solo con tu nombre puedes tener acceso a una pelicula!
                     No
