@@ -17,7 +17,12 @@ body{
     height: auto;
    
 }
-
+.Ticketvista{
+    margin-left: 40%;
+    text-align: center;
+    display: flex;
+    align-items: baseline;
+}
 .Texto-funcion{
     font-size: large;
 }
@@ -31,7 +36,7 @@ body{
 }
 
  .rounded{
-     border-radius: 5px;
+     height: 450px;
  }
  .Get-tickets{
      margin-top: 10px;
@@ -64,6 +69,12 @@ body{
     margin-left: 130px;
     margin-bottom: 50px;
 }
-.BtnComprarTicket{
-  
+.Text-Titulo{
+    font-size: xx-large;
+}
+.Text{
+  font-size: x-large;
+}
+footer{
+    background-color: white;
 }

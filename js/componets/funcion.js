@@ -10,7 +10,7 @@ export const Funcion = (
                     <div class="row rounded">
                         <div class=" col-3 Pelicula-container">
                             <div class="container-imagen text-center">
-                                <img src="${poster}" class="img-thumbnail"
+                                <img id="ImagenPoster" src="${poster}" class="img-thumbnail"
                                     alt="">
                             </div>
     
@@ -18,15 +18,15 @@ export const Funcion = (
                         </div>
                         <div class="col-9 Pelicula-video text-left sl-3">
                             <div class="container-title">
-                                <h1 class="text-light">${titulo}</h1>
+                                <h1 id="TituloPelicula" class="text-light Text-Titulo">${titulo}</h1>
                             </div>
                             <div class="contaier-descripcion ">
-                                <span class="text-light">${sinopsis}</span>
+                                <span id="Sinopsis" class="text-light Text">${sinopsis}</span>
                             </div>
-                            <div class="text-light mt-3 Horario Texto-funcion">
-                                <p id="Hora">Horario : ${horario}</p>
+                            <div class="text-light mt-3 Text Texto-funcion">
+                                <p id="Hora">${horario} Hs</p>
                             </div>
-                             <div class="text-light mt-3 Horario">
+                             <div class="text-light mt-3 Horario Text">
                                 <p id="Hora">Sala : ${sala}</p>
                             </div>
                         </div>

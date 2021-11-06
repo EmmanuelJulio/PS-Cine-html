@@ -1,10 +1,9 @@
-
 *{
     margin: 0;
     padding: 0;
 }
     
-    body{
+body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: rgb(67,169,235);
     background: linear-gradient(0deg, rgba(67,169,235,1) 0%, rgba(0,0,0,1) 100%);
@@ -12,27 +11,22 @@
     height: auto;
 }
 
-#carrusel img{
-    align-items: center;
-}
-/* slide de imagenes  */
+
 .carousel-inner{
-    margin-top: 10px;
+    margin-top: 5px;
     height: 100%; 
-    width: 70%; 
-    align-items: center;
-    text-align: center;
+    width: 80%; 
     display:block;
     margin-left: auto;
     margin-right: auto;
 }
-/*  */
+
 #tarjetas{
-    /* border: solid 1px black; */
+  
     margin-top: 30px;
     margin: auto auto;
-    width: 90%;
-    height: 100%;
+    width: 75%;
+    height: 85%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -43,11 +37,7 @@
     text-align: center;
     color: aliceblue;
 }
-#carrusel-pelis{
-    padding-top: 30px;
-    min-width: 640;
-    max-width: 900;
-}
+
 #tarjetas:hover{
     transform: scale(1);
     box-shadow: 5px 20px 30px rgba(0,0,0,0.2);
@@ -58,7 +48,7 @@
     box-shadow: 10px 20px 30px rgba(0,0,0,0.2); 
 }
 .card{
-    position: relative; 
+    /* position: relative;  */
     margin: 15px 15px 5px 15px;
     align-items: center;
     text-align: center;
@@ -69,19 +59,12 @@
     align-items: center;
 }
 /* slide de imagenes  */
-.wrapper:hover{
-    transform: scale(1);
-    box-shadow: 5px 20px 30px rgba(0,0,0,0.2);
+#TextoCaruselPeliculas{
+    margin-top: 10px;
+ margin-top: 10px;
 }
-.wrapper .container{
-    width: 100%;
-    height: 100%;
-}
-.wrapper .container .top{
-    height: 80%;
-    width: 100%;
-    /* background-size: 100%; */
-}
+
+
 .products_body{
     background: transparent;
     display: flex;
@@ -90,17 +73,114 @@
     width: 100%;
     height: 50vh;
 }
-.wrapper{
-     min-width: 250px;
-    min-height:350px;
-    max-width: 250px;
-    max-height:350px; 
-    background: transparent;
-    margin: auto;
-    position: relative;
-    overflow: hidden;
-    border-radius: 10px 10px 10px 10px;
-    transform: scale(0.93);
-    transition: box-shadow 0.5s, transform 0.5s;
-    z-index: auto;
+
+#CuadroDeBusqueda{
+ 
 }
+#ExividorDePeliculas{
+        margin-top: 10px;
+        width: 80%;
+        /* border: solid 1px black; */
+        height: 500px;
+        float: right;
+}
+/* Css Del carrusel */
+@media (max-width: 767px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: inline-flex;
+}
+
+/* medium and up screens */
+@media (min-width: 768px) {
+    
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+      transform: translateX(25%);
+    }
+    
+    .carousel-inner .carousel-item-start.active, 
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-25%);
+    }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start { 
+  transform: translateX(0);
+}
+
+.carousel-item{
+    padding-left: 10px;
+}
+
+/* Contenedor de busqueda */
+  #ContenedorSecundario{
+      
+  }
+  #ContenedorBusqueda{
+     padding-left: 20px;
+     align-items: center;
+  }
+  .grid{
+    display: grid;
+    grid-template-columns: 30% 70%;
+  }
+  
+  
+  .Busqueda label {
+    font-size: 1.4rem;
+    font-weight: bold;
+    /* display: block; */
+  }
+  .Busqueda form{
+      margin-top: 50px;
+      margin-left: 50px;
+  }
+  
+  .Busqueda input {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+  
+  .Busqueda input[type="text"], .Busqueda input[type="date"] {
+    
+    border: none;
+    
+    background: white;
+    outline: none;
+   
+   border-radius: 10px;
+    font-size: 1.4rem;
+  }
+  
+  .Busqueda input[type="button"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #b80f22;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 50px;
+  }
+  #TextBusqueda{
+
+  }
+  
+  .Busqueda input[type="button"]:hover {
+    cursor: pointer;
+    background: #ffc107;
+    color: rgb(77, 74, 74);
+  }
+  footer{
+      background-color: white;
+  }

@@ -1,54 +1,22 @@
 import { indexRender } from '../js/container/index.js'
 
 
-window.onload=()=>{
-
+window.onload=()=>{ 
   
   indexRender();
+  let items = document.querySelectorAll('.carousel .carousel-item')
   
-
-// slick confuguracion------------------------------------------------------------------------------------
-$(function(){
-	$('.center').slick({
-		infinite:true,
-		slidesToShow: 8,
-    slidesToScroll: 1,
-		arrows:false,
-		autoplay: true,
-		autoplaySpeed: 1000,
-		dots: false,
-		centerModel:true,
-        centerPadding:'80px',
-        responsive: [
-            {
-              breakpoint: 800,
-              settings: {
-                slidesToShow: 7,
-                slidesToScroll: 3,
-                infinite: true,
-                dots: false
-              }
-            },
-            {
-              breakpoint: 600,
-              settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2
-              }
-            },
-            {
-              breakpoint: 480,
-              settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
-              }
-            }
-          ]
-	});
-});
-
-
-function GuardarIdFuntionLocalStorage(e){
-  localStorage.setItem("IdFuncion",e)
-}
+items.forEach((el) => {
+    const minPerSlide = 5
+    let next = el.nextElementSibling
+    for (var i=1; i<minPerSlide; i++) {
+        if (!next) {
+            // wrap carousel by using first child
+        	next = items[0]
+      	}
+        let cloneChild = next.cloneNode(true)
+        el.appendChild(cloneChild.children[0])
+        next = next.nextElementSibling
+    }
+})
 }
